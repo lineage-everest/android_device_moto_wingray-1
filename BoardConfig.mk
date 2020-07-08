@@ -87,7 +87,7 @@ ifneq ($(HAVE_NVIDIA_PROP_SRC),false)
 -include vendor/nvidia/build/definitions.mk
 endif
 
-TARGET_RECOVERY_UI_LIB := librecovery_ui_stingray
+#TARGET_RECOVERY_UI_LIB := librecovery_ui_stingray
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 
@@ -111,3 +111,14 @@ TARGET_SCREEN_WIDTH := 1280
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_BOOTANIMATION_USE_RGB565 := true
+
+# TWRP initial config
+DEVICE_RESOLUTION := 1280x800
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_FLASH_FROM_STORAGE := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_DEFAULT_EXTERNAL_STORAGE := true
+TW_NO_USB_STORAGE := true

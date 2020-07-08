@@ -131,3 +131,7 @@ TW_CRYPTO_MNT_POINT := "/data"
 TW_CRYPTO_FS_OPTIONS := "noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc,errors=panic wait,encryptable=footer"
 TW_CRYPTO_FS_FLAGS := "0x00000406"
 TW_CRYPTO_KEY_LOC := "footer"
+
+# TWRP: brightness settings
+TW_BRIGHTNESS_PATH := "/sys/devices/platform/tegra-i2c.0/i2c-0/0-002c/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 255

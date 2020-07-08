@@ -1,15 +1,18 @@
 # Release name
 PRODUCT_RELEASE_NAME := XOOM
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_mini_tablet_wifionly.mk)
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Inherit some common Omni stuff.
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/moto/wingray/full_wingray.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := wingray
-PRODUCT_NAME := cm_wingray
+PRODUCT_NAME := omni_wingray
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Xoom
 PRODUCT_MANUFACTURER := Motorola

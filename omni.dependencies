@@ -1,0 +1,14 @@
+[
+    {
+        "remote":  "github",
+        "repository":   "LineageOS/android_device_moto_common",
+        "target_path":  "device/moto/common",
+        "revision":  "jellybean"
+    },
+    {
+        "remote":  "github",
+        "repository":   "LineageOS/motorola-kernel-stingray",
+        "target_path":  "kernel/motorola/stingray",
+        "revision":  "jellybean"
+    }
+]
